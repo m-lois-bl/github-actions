@@ -8,7 +8,7 @@ jobs:
         os: [ubuntu-latest, ubuntu-20.04]
     steps:
       - name: echo a string
-        run: echo "My favourite color is $MY_SECRET"
+        run: echo "My favourite color is ${{ secrets.MY_SECRET }}"
       - name: multiline script
         run: |
           python3 -V
